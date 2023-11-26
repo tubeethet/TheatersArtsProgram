@@ -26,10 +26,12 @@ nav ul a{
 	text-decoration: none;
 	color: #000;
 	transition: 0.2s ease-in;
+	font-size: 18px;
 }
 nav ul a:hover{
 	background-color: green;
 	color: white;
+	
 }
 
 
@@ -98,9 +100,6 @@ transform: scale(1.08);
 		grid-template-columns: repeat(1, 1fr);
 	}
 }		
-
-
-
 
 
 
