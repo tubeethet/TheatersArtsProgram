@@ -21,7 +21,32 @@
 		<img src="https://ischoolconnect.com/blog/wp-content/uploads/2022/09/drama.jpg">
 		<h4>Mime Event</h4>
 		<button onclick="alert('Do you want to buy this event?')">Order</button>
+
+
+		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <!-- Identify your business so that you can collect the payments. -->
+  <input type="hidden" name="business" value="kin@kinskards.com">
+
+  <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="add" value="1">
+
+  <!-- Specify details about the item that buyers will purchase. -->
+  <input type="hidden" name="item_name"
+        value="Mime Event">
+  <input type="hidden" name="amount" value="9.95">
+  <input type="hidden" name="currency_code" value="USD">
+
+ 
+  <!-- Display the payment button. -->
+  <input type="image" name="submit"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+    alt="Add to Cart">
+  <img alt="" width="1" height="1"
+    src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
 		
+
 		
 	</div>
 	
