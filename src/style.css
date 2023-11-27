@@ -1,0 +1,347 @@
+:root {
+    --primaryColor: #00274C;
+    --secondaryColor: #E17000;
+    --whiteColor: #FFFFFF;
+    --blackColor: #222222;
+    --softBlueColor: rgb(18, 79, 133);
+    --softerBlueColor: rgb(121, 224, 250);
+    --darkGreyColor: #565656;
+    --grayColor: #d9d6d6;
+    --darkGreen: #00836d;
+    --goldColor: #FFD700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2%;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+.sidebar-menus {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-menus a {
+    padding: 10% 8%;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+
+.sidebar-menus a ion-icon {
+    font-size: 20px;
+}
+
+.sidebar-menus a:hover {
+    background-color: var(--secondaryColor);
+    border-radius: 50px;
+    transition: 0.2s ease-in;
+}
+
+.main {
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    padding: 2%;
+    background-color: var(--softBlueColor);
+    margin-left: 250px;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 20px;
+    background-color: var(--secondaryColor);
+    color: var(--whiteColor);
+    text-decoration: none;
+    padding: 0 10px;
+    height: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    font-size: 16px;
+    background-color: rgb(142, 48, 48);
+    color: var(--whiteColor);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.profile:hover {
+    box-shadow: rgb(65, 68, 72) 0px 8px 24px;
+}
+
+.main-highlight {
+    margin: 3% 0;
+    padding: 2%;
+    background-color: var(--secondaryColor);
+    border-radius: 8px;
+}
+
+.main-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 20px;
+}
+
+.highlight-wrapper {
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    border-radius: 8px;
+    gap: 1.5rem;
+    overflow-x: hidden;
+}
+
+.highlight-card {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    width: 80%;
+    height: 100%;
+    gap: 1rem;
+    border-radius: 8px;
+    padding: 1%;
+    background-color: var(--grayColor);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.highlight-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.highlight-desc h4 {
+    color: var(--primaryColor);
+}
+
+.highlight-desc p {
+    color: var(--blackColor);
+    font-size: 13px;
+}
+
+.highlight-card:hover {
+    background-color: var(--whiteColor);
+    box-shadow: rgba(65, 68, 72, 0.186) 0px 8px 24px;
+}
+
+.main-menus {
+   min-height: 100%;
+   background-color: var(--grayColor);
+   padding: 2%;
+   border-radius: 8px;
+}
+
+.back-menus, .next-menus {
+    color: var(--grayColor);
+}
+
+.back-menus:hover, .next-menus:hover {
+    color: var(--grayColor);
+}
+
+.divider {
+    margin: 1rem 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    border: none;
+}
+
+.main-detail {
+    margin: 1rem 0 1.5rem 0;
+}
+
+.detail-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    margin-top: 1rem;
+    gap: 2%;
+    border-radius: 8px;
+}
+
+.detail-card {
+    min-height: 280px;
+    height: 100%;
+    background-color: var(--whiteColor);
+    border-radius: 8px;
+    margin: 1% 0;
+    box-shadow: rgba(65, 68, 72, 0.186) 0px 8px 24px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.detail-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    filter:brightness(0.8)
+}
+
+.detail-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3%;
+    width: 100%;
+}
+
+.detail-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size:16px
+}
+
+.bi-dash-lg {
+    color: red;
+}
+
+.bi-plus-lg {
+    color: green;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--whiteColor);
+}
+
+.HomeBtn, .checkout, .removeAll{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+}
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    margin-top: 1rem;
+    gap: 2%;
+    border-radius: 8px;
+}
+
+.cart-item {
+    border: 2px;
+    border-radius: 16px;
+    display: flex;
+}
+
+.title-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.detail-sub {
+    font-size: 12px;
+    color: var(--darkGreyColor);
+    letter-spacing: 0.5;
+    margin: 1% 0;
+}
+
+.cart-item-price {
+    color: var(--blackColor);
+}
+
+.price {
+    color: var(--darkGreen);
+}
+
+.detail-card:hover {
+    box-shadow: rgba(65, 68, 72, 0.588) 0px 8px 24px;
+}
+
+.detail-card:hover .price {
+    letter-spacing: 1.5;
+}
