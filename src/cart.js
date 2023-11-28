@@ -111,6 +111,13 @@ let clearCart = () => {
   calculation();
 };
 
+let checkOut = () => {
+  basket = [];
+  generateCartItems();
+  localStorage.setItem("data", JSON.stringify(basket));
+  calculation();
+};
+
 let TotalAmount = () => {
   if (basket.length !== 0) {
     let amount = basket
@@ -124,7 +131,7 @@ let TotalAmount = () => {
     // console.log(amount);
     label.innerHTML = `
     <h2>Total Bill : $ ${amount}.00</h2>
-    <button class="checkout">Checkout</button>
+    <button onclick="checkOut()" class="checkout">Checkout</button>
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
     `;
   } else return;
