@@ -57,5 +57,4 @@ if (!empty($username) || !empty($password) || !empty($gender) || !empty($email) 
 	die();
 }
 
-
 ?>
