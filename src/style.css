@@ -48,12 +48,12 @@ a {
     color: var(--whiteColor);
 }
 
-.sidebar-menus {
+.sidebar-menus, .sidebar-logout {
     display: flex;
     flex-direction: column;
 }
 
-.sidebar-menus a {
+.sidebar-menus a , .sidebar-logout a{
     padding: 10% 8%;
     margin: 0.5rem 0;
     display: flex;
@@ -64,11 +64,11 @@ a {
     color: var(--whiteColor);
 }
 
-.sidebar-menus a ion-icon {
+.sidebar-menus a ion-icon, .sidebar-logout a ion-icon {
     font-size: 20px;
 }
 
-.sidebar-menus a:hover {
+.sidebar-menus a:hover, .sidebar-logout a:hover {
     background-color: var(--secondaryColor);
     border-radius: 50px;
     transition: 0.2s ease-in;
