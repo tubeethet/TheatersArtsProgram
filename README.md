@@ -5,8 +5,17 @@ Due: 11/27/2023
 ----------------------------------------------------------
 Anthony Tran - Tranthony_777@csu.fullerton.edu - 886076959
 
+Project Overview:
 ----------------------------------------------------------
+Create a robust web application hosted on a Linux-based server infrastructure. 
 
+Programming Lanuages
+----------------------------------------------------------
+HTML,
+CSS,
+Javascript,
+PHP,
+SQL
 
 # TheatersArtsProgram
 This project is about theater arts website buying events or checking the website.
