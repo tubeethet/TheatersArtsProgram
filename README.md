@@ -38,6 +38,8 @@ can be used.
 Open Sources Utilized:
 -------------------------------------------------------------
 Google Fonts
+
 Ionicons
+
 Bootstrap Icons
 
