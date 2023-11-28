@@ -35,3 +35,9 @@ Save the file for it to work.
 As for php files to link to database, the php file needs to mention exact name of database to attribute it to. MySQL language and bash 
 can be used.
 
+Open Sources Utilized:
+-------------------------------------------------------------
+Google Fonts
+Ionicons
+Bootstrap Icons
+
